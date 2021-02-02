@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+.center-wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 0 12px;
+}
+
+header {
+    height: 50px;
+    line-height: 49px;
+    background: #000;
+    color: #fff;
+    font-size: 26px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    font-family: 'Quicksand', arial, sans-serif;
+}
+
+section {
+    padding: 20px 0 0;
+    transition: opacity 200ms;
+}
+
+.logo {
+    float: left;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+.ninja {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% auto 0;
+    padding: 0 15%;
+    justify-content: space-between;
+}
+
+.social a {
+    flex: 0 0 80px;
+    height: 80px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    padding: 5px;
+    background: #000;
+}
+
+.social a:last-child {
+    margin-right: 0;
+}
+
+.social a span {
+    display: block;
+    height: 80px;
+    width: 80px;
+    background: url(images/social-icons.svg) 0 0/cover no-repeat;
+}
+
+.social a.github span {
+    background-position: -240px 0;
+}
+
+.social a.github:hover {
+    background: #481478;
+}
+
+.social a.stack-overflow span {
+    background-position: -320px 0;
+}
+
+.social a.stack-overflow:hover {
+    background: #ff7c14;
+}
+
+.social a.steam span {
+    background-position: -159px 0;
+}
+
+.social a.steam:hover {
+    background: #676361;
+}
+
+.social a.last-fm span {
+    background-position: -80px 0;
+}
+
+.social a.last-fm:hover {
+    background: #e11b23;
+}
+
+.social a.twitter:hover {
+    background: #55acee;
+}
+
+@media all and (max-width: 1024px) {
+    .center-wrap {
+        width: auto;
+        padding: 0 10px;
+    }
+
+    header .center-wrap {
+        text-align: center;
+    }
+
+    .social {
+        padding: 0 5%;
+    }
+}
